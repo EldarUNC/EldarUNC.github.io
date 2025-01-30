@@ -39,6 +39,15 @@
         .section {
             margin-bottom: 40px;
         }
+        .photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .photo img {
+            border-radius: 50%;
+            max-width: 150px;
+            height: auto;
+        }
         footer {
             background: #13294B;
             color: white;
@@ -58,18 +67,38 @@
     
     <nav>
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#leadership">Leadership</a>
         <a href="#contact">Contact</a>
     </nav>
-    
+
+    <div class="photo">
+        <img src="Utiushev_Eldar_Photo.jpg" alt="Eldar Utiushev">
+    </div>
+
     <div class="container">
         <section id="about" class="section">
             <h2>About Me</h2>
             <p>Hi there! I’m Eldar Utiushev, a dual-degree student in Business Administration and Computer Science at UNC Chapel Hill. My journey has been defined by a love for problem-solving, whether through data analysis, consulting, or giving back to the community.</p>
         </section>
-        
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <p><strong>University of North Carolina at Chapel Hill</strong> | Kenan-Flagler Business School – Chapel Hill, NC (May 2025)</p>
+            <ul>
+                <li>Double Major in Computer Science BA and Business Administration BSBA</li>
+                <li>GPA: 3.7 / 4.0</li>
+            </ul>
+            <p><strong>Awards:</strong></p>
+            <ul>
+                <li>Deloitte 2023 Undergraduate Case Competition Winner</li>
+                <li>P&G 2023 Marketing Case Competition Finalist</li>
+                <li>Undergraduate Consulting Club 2022 Case Competition Winner</li>
+            </ul>
+        </section>
+
         <section id="experience" class="section">
             <h2>Experience</h2>
             <p><strong>EATS2SEATS, LLC (May 2024 – Aug 2024)</strong></p>
@@ -84,23 +113,19 @@
                 <li>Developed a $6M affordable housing plan projected to aid 9,000+ low-income residents.</li>
                 <li>Applied K-means clustering algorithm to identify three market segments.</li>
                 <li>Created a P&L projection for a factory acquisition, cutting production costs by 20%.</li>
+                <li>Interviewed 15+ stakeholders to gather insights.</li>
             </ul>
         </section>
-        
-        <section id="projects" class="section">
-            <h2>Projects</h2>
+
+        <section id="leadership" class="section">
+            <h2>Leadership & Community Involvement</h2>
             <ul>
-                <li>Luxury Brand Perception Classifier – AI-driven classifier analyzing brand perception through social media.</li>
-                <li>Automated Payroll System – Used Python to streamline payroll processes and minimize errors.</li>
-                <li>P&L Projection Model – Developed financial projections to optimize cost-cutting strategies.</li>
+                <li>Co-Founder of UNC Breakdancing Club – Organized beginner-friendly breakdancing courses at Duke and UNC.</li>
+                <li>President of UNC Cybersecurity Club – Collaborated with companies like Appian to offer opportunities in cybersecurity.</li>
+                <li>Mentored a teenager through the LightHouse Mentorship Program, improving their GPA from 2.54 to 3.57.</li>
             </ul>
         </section>
-        
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <p>Advanced Excel, SQL, Tableau, Python, Java, C, NumPy, Matplotlib, Pandas, Scikit-Learn, Android Studio</p>
-        </section>
-        
+
         <section id="contact" class="section">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:Eldar_Utiushev@kenan-flagler.unc.edu">Eldar_Utiushev@kenan-flagler.unc.edu</a></p>
@@ -108,7 +133,7 @@
             <p>LinkedIn: <a href="https://linkedin.com/in/eldaru">linkedin.com/in/eldaru</a></p>
         </section>
     </div>
-    
+
     <footer>
         <p>&copy; 2025 Eldar Utiushev. All Rights Reserved.</p>
     </footer>
