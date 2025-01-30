@@ -3,85 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eldar Utiushev - Resume</title>
+    <title>Personal Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
+            width: 80%;
+            margin: auto;
             padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #0073e6;
+            background: white;
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
-        .contact a {
-            color: #0073e6;
-            text-decoration: none;
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Your Profession or Career Tagline</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
     <div class="container">
-        <h1>Eldar Utiushev</h1>
-        <p class="contact">
-            Email: <a href="mailto:Eldar_Utiushev@kenan-flagler.unc.edu">Eldar_Utiushev@kenan-flagler.unc.edu</a> | 
-            Phone: +1 (984) 322-8206 | 
-            <a href="https://linkedin.com/in/eldaru" target="_blank">LinkedIn</a>
-        </p>
-
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>University of North Carolina at Chapel Hill</strong> | Kenan-Flagler Business School – May 2025</p>
-            <p>Double Major in Computer Science BA and Business Administration BSBA | GPA: 3.7 / 4.0</p>
-        </div>
-
-        <div class="section">
-            <h2>Skills</h2>
-            <p>Advanced Excel, SQL, Tableau, Python, Java, C, NumPy, Matplotlib, Pandas, Scikit-Learn, Android Studio, Think-Cell</p>
-        </div>
-
-        <div class="section">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Brief introduction about yourself, your career aspirations, and what makes you unique.</p>
+        </section>
+        
+        <section id="experience" class="section">
             <h2>Experience</h2>
-            <p><strong>Data Analyst - EATS2SEATS, LLC</strong> (May 2024 – Aug 2024)</p>
-            <ul>
-                <li>Managed a team of 85+ staff at the 2024 Golf US Open, driving top sales performance.</li>
-                <li>Analyzed POS data and automated invoicing/payroll systems using Python & SQL.</li>
-                <li>Built a prediction model reducing staff dropout rate by 10%.</li>
-            </ul>
-            
-            <p><strong>STAR Consulting Program - Kenan-Flagler Business School</strong> (Jan 2024 – May 2024)</p>
-            <ul>
-                <li>Consulted a construction company on a $6M affordable housing project.</li>
-                <li>Developed a business plan to assist 9,000+ low-income residents.</li>
-                <li>Applied K-means clustering to segment the market effectively.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Leadership & Community Involvement</h2>
-            <p><strong>President - UNC Cybersecurity Club</strong> (May 2022 – May 2024)</p>
-            <p>Organized events with tech companies and increased membership by 40+ in one day.</p>
-            
-            <p><strong>Co-Founder - UNC Breakdancing Club</strong> (Jan 2024 – Present)</p>
-            <p>Created the first breakdancing club at UNC, providing beginner-friendly classes.</p>
-        </div>
-
-        <div class="section">
-            <h2>Additional Information</h2>
-            <p>Interests: Breakdancing, Boxing, Jiu-Jitsu, Skiing, Traveling</p>
-            <p>Languages: Russian (native), English (fluent), Kyrgyz (beginner), Mandarin (beginner)</p>
-        </div>
+            <p>List your work experiences, internships, or any relevant industry experiences.</p>
+        </section>
+        
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>Showcase some of your best work, including project descriptions and links.</p>
+        </section>
+        
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <p>Highlight technical and soft skills that are relevant to your profession.</p>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Provide your email, LinkedIn profile, or other ways to reach you.</p>
+        </section>
     </div>
+    
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
