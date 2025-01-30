@@ -17,36 +17,43 @@
             color: white;
             padding: 20px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-content img {
+            border-radius: 50%;
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 10px;
         }
         nav {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             background: #7BAFD4;
             padding: 10px;
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 5px 15px;
             font-weight: bold;
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
             padding: 20px;
             background: white;
         }
         .section {
             margin-bottom: 40px;
-        }
-        .photo {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .photo img {
-            border-radius: 50%;
-            max-width: 150px;
-            height: auto;
         }
         footer {
             background: #13294B;
@@ -57,26 +64,45 @@
             bottom: 0;
             width: 100%;
         }
+        @media (min-width: 768px) {
+            header {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                text-align: left;
+                padding: 20px 40px;
+            }
+            .header-content {
+                flex-direction: row;
+                align-items: center;
+            }
+            .header-content img {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Eldar Utiushev</h1>
-        <p>Data Analyst | Business & Computer Science Student</p>
+        <div class="header-content">
+            <img src="Utiushev_Eldar_Photo.jpg" alt="Eldar Utiushev">
+            <div>
+                <h1>Eldar Utiushev</h1>
+                <p>Data Analyst | Business & Computer Science Student</p>
+            </div>
+        </div>
     </header>
     
     <nav>
         <a href="#about">About</a>
         <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#awards">Awards</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
         <a href="#leadership">Leadership</a>
         <a href="#contact">Contact</a>
     </nav>
-
-    <div class="photo">
-        <img src="Utiushev_Eldar_Photo.jpg" alt="Eldar Utiushev">
-    </div>
 
     <div class="container">
         <section id="about" class="section">
@@ -91,7 +117,15 @@
                 <li>Double Major in Computer Science BA and Business Administration BSBA</li>
                 <li>GPA: 3.7 / 4.0</li>
             </ul>
-            <p><strong>Awards:</strong></p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <p>Advanced Excel, SQL, Tableau, Python, Java, C, NumPy, Matplotlib, Pandas, Scikit-Learn, Android Studio, Think-Cell</p>
+        </section>
+
+        <section id="awards" class="section">
+            <h2>University-Wide Awards</h2>
             <ul>
                 <li>Deloitte 2023 Undergraduate Case Competition Winner</li>
                 <li>P&G 2023 Marketing Case Competition Finalist</li>
@@ -101,28 +135,64 @@
 
         <section id="experience" class="section">
             <h2>Experience</h2>
-            <p><strong>EATS2SEATS, LLC (May 2024 – Aug 2024)</strong></p>
+            <h3>Teacher Assistant</h3>
+            <p>Business Analytics (Fall 2024); Introduction to Scientific Programming (Spring 2023 – Spring 2024)</p>
+
+            <h3>EATS2SEATS, LLC (May 2024 – Aug 2024)</h3>
             <ul>
                 <li>Managed a team of 85+ staff at the 2024 Golf US Open, driving top sales performance in concessions.</li>
                 <li>Analyzed POS data using Python & SQL to pay $500K+ to clients and $100K+ to staff.</li>
                 <li>Automated invoicing and payroll systems with Python, averting $80K+ in potential errors.</li>
                 <li>Built and trained a prediction model using Random Forest, reducing staff dropout rate by 10%.</li>
             </ul>
-            <p><strong>STAR Consulting Program (Jan 2024 – May 2024)</strong></p>
+
+            <h3>STAR Consulting Program (Jan 2024 – May 2024)</h3>
             <ul>
                 <li>Developed a $6M affordable housing plan projected to aid 9,000+ low-income residents.</li>
                 <li>Applied K-means clustering algorithm to identify three market segments.</li>
                 <li>Created a P&L projection for a factory acquisition, cutting production costs by 20%.</li>
-                <li>Interviewed 15+ stakeholders to gather insights.</li>
+            </ul>
+
+            <h3>BUSI 488: Data Science in Business World (Dec 2023 – May 2024)</h3>
+            <ul>
+                <li>Co-developed an AI-driven classifier training RoBERTa on 21K+ TikTok comments delivering fast perception analysis.</li>
+                <li>Reduced market research costs by 95%, providing insights for $443/month compared to $15K-$50K traditionally.</li>
+                <li>Generated actionable insights in under 1 hour with 78% precision, surpassing traditional 6-7wk research timelines.</li>
+            </ul>
+
+            <h3>Research Assistant (Dec 2023 – May 2024)</h3>
+            <ul>
+                <li>Analyzed an E-Commerce global leader’s database (15M+ rows) using Pandas and SQL to identify 10+ purchase drivers.</li>
+                <li>Contributed to a research paper in a team with 3 PhDs analyzing user click behavior to improve the conversion rate.</li>
+                <li>Optimized run-time of the code by simplifying data structures and algorithms resulting in O(n2) run-time reduction.</li>
             </ul>
         </section>
 
         <section id="leadership" class="section">
             <h2>Leadership & Community Involvement</h2>
+            <h3>Entrepreneurship & Make-A-Wish Collaboration (Aug 2023 – Dec 2023)</h3>
             <ul>
-                <li>Co-Founder of UNC Breakdancing Club – Organized beginner-friendly breakdancing courses at Duke and UNC.</li>
-                <li>President of UNC Cybersecurity Club – Collaborated with companies like Appian to offer opportunities in cybersecurity.</li>
-                <li>Mentored a teenager through the LightHouse Mentorship Program, improving their GPA from 2.54 to 3.57.</li>
+                <li>Contributed to raise $120,000 for Make-A-Wish to help Graham, a kid from Make-A-Wish, visit Disney Land.</li>
+                <li>Personally raised $1,030 for Make-A-Wish within 4wks selling modified hair accessories at the UNC campus.</li>
+            </ul>
+
+            <h3>President of UNC Cybersecurity Club (May 2022 – May 2024)</h3>
+            <ul>
+                <li>Organized events with leading tech companies, such as Appian and Gusto, to offer opportunities in cybersecurity.</li>
+                <li>Implemented marketing strategies and events with the CS department attracting 40 new members in 1 day.</li>
+            </ul>
+
+            <h3>Co-Founder of UNC Breakdancing Club (Jan 2024 – Present)</h3>
+            <ul>
+                <li>Co-founded the first breakdancing club in UNC history; created a beginner-friendly course taught at Duke and UNC.</li>
+                <li>Implemented marketing strategies and events with the CS department attracting 40 new members in 1 day.</li>
+            </ul>
+
+            <h3>LightHouse Mentorship Program (Aug 2019 – Dec 2022)</h3>
+            <ul>
+                <li>Mentored a teenager from an orphanage for 3 years for the LightHouse non-profit organization in Kyrgyzstan.</li>
+                <li>Tutored him and contributed to an increase in his GPA from 2.54 to 3.57 in 2 years of high school before graduation.</li>
+                <li>Advised him on available social benefits, career opportunities, and academic planning before his orphanage graduation.</li>
             </ul>
         </section>
 
